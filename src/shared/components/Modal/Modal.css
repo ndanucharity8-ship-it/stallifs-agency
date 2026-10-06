@@ -1,0 +1,126 @@
+/* =========================================================
+   MODAL
+   ========================================================= */
+
+.modal {
+  align-items: center;
+  background: rgb(15 23 42 / 45%);
+  display: flex;
+  inset: 0;
+  justify-content: center;
+  padding: 1.5rem;
+  position: fixed;
+  z-index: var(--z-modal);
+}
+
+
+/* =========================================================
+   MODAL CONTENT
+   ========================================================= */
+
+.modal__content {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  max-height: calc(100vh - 3rem);
+  overflow-y: auto;
+  width: 100%;
+}
+
+.modal__content--small {
+  max-width: 420px;
+}
+
+.modal__content--medium {
+  max-width: 600px;
+}
+
+.modal__content--large {
+  max-width: 900px;
+}
+
+
+/* =========================================================
+   MODAL HEADER
+   ========================================================= */
+
+.modal__header {
+  align-items: center;
+  border-bottom: 1px solid var(--color-border);
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  padding: 1.25rem 1.5rem;
+}
+
+.modal__title {
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+
+/* =========================================================
+   CLOSE BUTTON
+   ========================================================= */
+
+.modal__close {
+  align-items: center;
+  background: transparent;
+  border: 0;
+  border-radius: var(--radius-sm);
+  color: var(--color-muted);
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 1.75rem;
+  height: 36px;
+  justify-content: center;
+  line-height: 1;
+  padding: 0;
+  transition:
+    background-color var(--transition-normal),
+    color var(--transition-normal);
+  width: 36px;
+}
+
+.modal__close:hover {
+  background: var(--color-surface-muted);
+  color: var(--color-text);
+}
+
+.modal__close:focus-visible {
+  box-shadow: var(--focus-ring);
+  outline: none;
+}
+
+
+/* =========================================================
+   MODAL BODY
+   ========================================================= */
+
+.modal__body {
+  padding: 1.5rem;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+  .modal {
+    padding: 1rem;
+  }
+
+  .modal__content {
+    max-height: calc(100vh - 2rem);
+  }
+
+  .modal__header {
+    padding: 1rem 1.25rem;
+  }
+
+  .modal__body {
+    padding: 1.25rem;
+  }
+}

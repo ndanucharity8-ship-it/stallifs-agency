@@ -1,0 +1,236 @@
+:root {
+  /* =========================================================
+     COLORS
+     ========================================================= */
+
+  /* Brand */
+  --color-primary: #0b63ce;
+  --color-primary-dark: #084f9f;
+  --color-primary-light: #e8f1fc;
+
+  --color-brand-green: #65b741;
+  --color-brand-green-dark: #4f9632;
+  --color-brand-green-light: #edf8e8;
+
+  --color-brand-yellow: #f4c542;
+  --color-brand-yellow-dark: #d9a91f;
+  --color-brand-yellow-light: #fff8dc;
+
+  /* Base */
+  --color-background: #f7f9fc;
+  --color-surface: #ffffff;
+  --color-surface-muted: #eef2f7;
+
+  /* Text */
+  --color-text: #172033;
+  --color-muted: #667085;
+  --color-placeholder: #98a2b3;
+
+  /* Borders */
+  --color-border: #dfe5ec;
+  --color-border-strong: #c8d0da;
+
+  /* Semantic success */
+  --color-success: #16a34a;
+  --color-success-light: #dcfce7;
+  --color-success-dark: #166534;
+
+  /* Semantic warning */
+  --color-warning: #d97706;
+  --color-warning-light: #fef3c7;
+  --color-warning-dark: #92400e;
+
+  /* Semantic danger */
+  --color-danger: #dc2626;
+  --color-danger-light: #fee2e2;
+  --color-danger-dark: #991b1b;
+
+  /* Semantic info */
+  --color-info: #2563eb;
+  --color-info-light: #dbeafe;
+  --color-info-dark: #1e40af;
+
+  /* Basic */
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+
+  /* =========================================================
+     SPACING
+     ========================================================= */
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+
+
+  /* =========================================================
+     TYPOGRAPHY
+     ========================================================= */
+
+  --font-family-base:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 1.875rem;
+  --font-size-4xl: 2.25rem;
+  --font-size-5xl: 3rem;
+  --font-size-6xl: 4rem;
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+
+  --line-height-tight: 1.15;
+  --line-height-normal: 1.6;
+  --line-height-relaxed: 1.75;
+
+
+  /* =========================================================
+     BORDERS & RADIUS
+     ========================================================= */
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-pill: 999px;
+
+
+  /* =========================================================
+     SHADOWS
+     ========================================================= */
+
+  --shadow-sm: 0 2px 8px rgb(16 24 40 / 6%);
+  --shadow-md: 0 8px 24px rgb(16 24 40 / 8%);
+  --shadow-lg: 0 16px 40px rgb(16 24 40 / 12%);
+
+
+  /* =========================================================
+     FOCUS / ACCESSIBILITY
+     ========================================================= */
+
+  --focus-ring: 0 0 0 3px rgb(11 99 206 / 20%);
+  --focus-border: var(--color-primary);
+
+
+  /* =========================================================
+     LAYOUT
+     ========================================================= */
+
+  --container-width: 1180px;
+  --content-width: 900px;
+  --header-height: 72px;
+  --footer-height: 100px;
+  --sidebar-width: 260px;
+  --sidebar-collapsed-width: 72px;
+
+
+  /* =========================================================
+     COMPONENT SIZING
+     ========================================================= */
+
+  --control-height-sm: 36px;
+  --control-height-md: 44px;
+  --control-height-lg: 52px;
+  --button-height: 44px;
+
+
+  /* =========================================================
+     TRANSITIONS
+     ========================================================= */
+
+  --transition-fast: 120ms ease;
+  --transition-normal: 160ms ease;
+  --transition-slow: 240ms ease;
+
+
+  /* =========================================================
+     Z-INDEX
+     ========================================================= */
+
+  --z-header: 100;
+  --z-dropdown: 200;
+  --z-sticky: 300;
+  --z-overlay: 400;
+  --z-modal: 500;
+  --z-toast: 600;
+}
+
+
+/* =========================================================
+   DARK THEME
+   ========================================================= */
+
+:root[data-theme="dark"] {
+  /* Base */
+  --color-background: #101828;
+  --color-surface: #182230;
+  --color-surface-muted: #243142;
+
+  /* Text */
+  --color-text: #f2f4f7;
+  --color-muted: #98a2b3;
+  --color-placeholder: #667085;
+
+  /* Borders */
+  --color-border: #344054;
+  --color-border-strong: #475467;
+
+  /* Primary */
+  --color-primary: #3b8ff0;
+  --color-primary-dark: #2b78d1;
+  --color-primary-light: #193b68;
+
+  /* Brand green */
+  --color-brand-green: #82c95f;
+  --color-brand-green-dark: #69ad49;
+  --color-brand-green-light: #1e3820;
+
+  /* Brand yellow */
+  --color-brand-yellow: #f6cf58;
+  --color-brand-yellow-dark: #e4b83c;
+  --color-brand-yellow-light: #3d351b;
+
+  /* Semantic success */
+  --color-success: #4ade80;
+  --color-success-light: #123b25;
+  --color-success-dark: #86efac;
+
+  /* Semantic warning */
+  --color-warning: #f59e0b;
+  --color-warning-light: #432f12;
+  --color-warning-dark: #fbbf24;
+
+  /* Semantic danger */
+  --color-danger: #f87171;
+  --color-danger-light: #431b1b;
+  --color-danger-dark: #fca5a5;
+
+  /* Semantic info */
+  --color-info: #60a5fa;
+  --color-info-light: #172f55;
+  --color-info-dark: #93c5fd;
+}

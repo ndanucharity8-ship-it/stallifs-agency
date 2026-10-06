@@ -1,0 +1,165 @@
+/* =========================================================
+   GLOBAL TYPOGRAPHY
+   ========================================================= */
+
+body {
+  color: var(--color-text);
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-normal);
+}
+
+
+/* =========================================================
+   HEADINGS
+   ========================================================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-text);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+}
+
+h1 {
+  font-size: clamp(
+    var(--font-size-4xl),
+    6vw,
+    var(--font-size-6xl)
+  );
+  letter-spacing: -0.04em;
+}
+
+h2 {
+  font-size: clamp(
+    var(--font-size-2xl),
+    3vw,
+    var(--font-size-4xl)
+  );
+  letter-spacing: -0.03em;
+}
+
+h3 {
+  font-size: var(--font-size-xl);
+  letter-spacing: -0.01em;
+}
+
+h4 {
+  font-size: var(--font-size-lg);
+}
+
+h5 {
+  font-size: var(--font-size-md);
+}
+
+h6 {
+  font-size: var(--font-size-sm);
+}
+
+
+/* =========================================================
+   BODY TEXT
+   ========================================================= */
+
+p {
+  color: var(--color-muted);
+}
+
+small {
+  font-size: var(--font-size-sm);
+}
+
+
+/* =========================================================
+   TEXT UTILITIES
+   ========================================================= */
+
+.text-primary {
+  color: var(--color-primary);
+}
+
+.text-muted {
+  color: var(--color-muted);
+}
+
+.text-success {
+  color: var(--color-success);
+}
+
+.text-warning {
+  color: var(--color-warning);
+}
+
+.text-danger {
+  color: var(--color-danger);
+}
+
+.text-info {
+  color: var(--color-info);
+}
+
+
+/* =========================================================
+   FONT WEIGHTS
+   ========================================================= */
+
+.font-regular {
+  font-weight: var(--font-weight-regular);
+}
+
+.font-medium {
+  font-weight: var(--font-weight-medium);
+}
+
+.font-semibold {
+  font-weight: var(--font-weight-semibold);
+}
+
+.font-bold {
+  font-weight: var(--font-weight-bold);
+}
+
+.font-extrabold {
+  font-weight: var(--font-weight-extrabold);
+}
+
+
+/* =========================================================
+   LABEL / EYEBROW TEXT
+   ========================================================= */
+
+.eyebrow {
+  color: var(--color-primary);
+  display: inline-block;
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-extrabold);
+  letter-spacing: 0.12em;
+  line-height: 1.4;
+  margin-bottom: var(--space-4);
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   LINKS
+   ========================================================= */
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-primary-dark);
+}
+
+a:focus-visible {
+  border-radius: var(--radius-sm);
+  box-shadow: var(--focus-ring);
+  outline: none;
+}

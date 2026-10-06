@@ -1,0 +1,102 @@
+.dashboard-statistics {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.dashboard-statistic {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  min-width: 0;
+  padding: 1.5rem;
+  transition:
+    border-color var(--transition-normal),
+    box-shadow var(--transition-normal),
+    transform var(--transition-normal);
+}
+
+.dashboard-statistic:hover {
+  border-color: rgb(11 99 206 / 25%);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.dashboard-statistic__header {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.dashboard-statistic__label {
+  color: var(--color-muted);
+  font-size: 0.85rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.dashboard-statistic__icon {
+  align-items: center;
+  background: var(--color-surface-muted);
+  border-radius: var(--radius-md);
+  color: var(--color-primary);
+  display: inline-flex;
+  flex-shrink: 0;
+  height: 42px;
+  justify-content: center;
+  width: 42px;
+}
+
+.dashboard-statistic__value {
+  color: var(--color-text);
+  font-size: clamp(1.8rem, 3vw, 2.35rem);
+  font-weight: var(--font-weight-extrabold);
+  letter-spacing: -0.03em;
+  line-height: 1;
+  margin-top: 1.25rem;
+}
+
+.dashboard-statistic__description {
+  color: var(--color-muted);
+  font-size: 0.8rem;
+  line-height: 1.5;
+  margin: 0.75rem 0 0;
+}
+
+.dashboard-statistic--success .dashboard-statistic__icon {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.dashboard-statistic--warning .dashboard-statistic__icon {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.dashboard-statistic--danger .dashboard-statistic__icon {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.dashboard-statistic--info .dashboard-statistic__icon {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+@media (max-width: 1000px) {
+  .dashboard-statistics {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .dashboard-statistics {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-statistic {
+    padding: 1.25rem;
+  }
+}

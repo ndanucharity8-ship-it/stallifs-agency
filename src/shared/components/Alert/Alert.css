@@ -1,0 +1,107 @@
+.alert {
+  align-items: flex-start;
+  border: 1px solid transparent;
+  border-radius: var(--radius-md);
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  padding: 1rem 1.1rem;
+}
+
+.alert__content {
+  min-width: 0;
+}
+
+.alert__title {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.alert__message {
+  line-height: 1.6;
+}
+
+.alert__close {
+  align-items: center;
+  background: transparent;
+  border: 0;
+  border-radius: var(--radius-sm);
+  color: inherit;
+  cursor: pointer;
+  display: inline-flex;
+  flex-shrink: 0;
+  font-size: 1.4rem;
+  height: 32px;
+  justify-content: center;
+  line-height: 1;
+  padding: 0;
+  transition:
+    background-color var(--transition-normal),
+    opacity var(--transition-normal);
+  width: 32px;
+}
+
+.alert__close:hover {
+  background: rgb(0 0 0 / 6%);
+  opacity: 0.8;
+}
+
+.alert__close:focus-visible {
+  box-shadow: var(--focus-ring);
+  outline: none;
+}
+
+
+/* =========================================================
+   INFO
+   ========================================================= */
+
+.alert--info {
+  background: #dbeafe;
+  border-color: #93c5fd;
+  color: #1e40af;
+}
+
+
+/* =========================================================
+   SUCCESS
+   ========================================================= */
+
+.alert--success {
+  background: #dcfce7;
+  border-color: #86efac;
+  color: #166534;
+}
+
+
+/* =========================================================
+   WARNING
+   ========================================================= */
+
+.alert--warning {
+  background: #fef3c7;
+  border-color: #fcd34d;
+  color: #92400e;
+}
+
+
+/* =========================================================
+   DANGER
+   ========================================================= */
+
+.alert--danger {
+  background: #fee2e2;
+  border-color: #fca5a5;
+  color: #991b1b;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+  .alert {
+    padding: 0.9rem 1rem;
+  }
+}
